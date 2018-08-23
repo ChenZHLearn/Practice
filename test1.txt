@@ -1,3 +1,5 @@
 hello!!!!
 
-I'm learning Linux & C#
+
+I'm learning Linux and C#
+
