@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css"> </head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="qdu.png" height="30" class="d-inline-block align-top img-fluid" alt=""> </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false" id="navbarDropdownMenuLink" data-toggle="dropdown" href="#">
+              <i class="fa fa-fw fa-book"></i>教学管理</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <div class="lead bg-success"> 课程管理 </div>
+              <a class="dropdown-item" href="#">课程浏览</a>
+              <a class="dropdown-item" href="#" id="addCourse">课程添加</a>
+              <hr>
+              <div class="lead bg-success"> 教师管理 </div>
+              <a class="dropdown-item" href="#">教师浏览</a>
+              <a class="dropdown-item" href="#">教师添加</a>
+              <hr>
+              <div class="lead bg-success"> 班级管理 </div>
+              <a class="dropdown-item" href="#">班级信息</a>
+              <a class="dropdown-item" href="#">添加班级</a>
+              <hr>
+              <div class="lead bg-success"> 学生管理 </div>
+              <a class="dropdown-item" href="#">学生信息</a>
+              <a class="dropdown-item" href="#">添加学生</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" id="navbarDropdownMenuLink">
+              <i class="fa fa-fw fa-pencil-square-o"></i>考试管理</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">题库管理</a>
+              <a class="dropdown-item" href="#">在线考试</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navbarDropdownMenuLink" href="#">
+              <i class="fa fa-fw fa-table"></i>成绩统计</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" id="grade" href="#">成绩汇总</a>
+              <a class="dropdown-item" href="#">成绩核算</a>
+              <a class="dropdown-item" href="#">成绩分析</a>
+            </div>
+          </li>
+        </ul>
+        <a class="btn navbar-btn ml-2 text-white btn-primary" id="login">
+          <i class="fa d-inline fa-lg fa-user-circle-o"></i> Sign in</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="jumbotron" id="show" style="min-height:500px"> </div>
+  </div>
+  <div class="bg-secondary py-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 my-1">
+          <p style="margin-top:10px">2018@302-3. All Rights Reserved. </p>
+          <p> 工信部备案号： 鲁ICP备123456789号-10 </p>
+          <p> Contact information：qq:819542987 Email：819542987@qq.com </p>
+        </div>
+        <div class="col-md-4  text-center align-self-center">
+          <a href="https://weixin.qq.com/" target="_blank">
+            <i class="fa fa-fw fa-3x text-white mx-3 fa-weixin"></i>
+          </a>
+          <a href="https://qq.com/" target="_blank">
+            <i class="fa fa-fw fa-3x text-white mx-3 fa-qq"></i>
+          </a>
+          <a href="https://weibo.com/" target="_blank">
+            <i class="fa fa-fw fa-3x text-white mx-3 fa-weibo"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+    	$("#grade").click(function(){
+  			$("#show").load("showpage.html #showGrade,#showPagination");
+      });
+  		
+    	$("#addCourse").click(function(){
+  			$("#show").load("showpage.html #showAddCourse");
+      });
+      
+      $("#login").click(function(){
+  			$("#show").load("showpage.html #showLoginForm");
+      });
+  		
+  	});
+  </script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
+</body>
+
+</html>

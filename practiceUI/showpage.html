@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://v40.pingendo.com/assets/4.0.0/default/theme.css" type="text/css"> </head>
+
+<body>
+  <div class="" id="showAddCourse">
+    <div class="container bg-primary">
+      <div class="row">
+        <div class="col-md-12">
+          <form class="">
+            <div class="form-group form-row">
+              <label class="control-label col-sm-2 col-form-label">Course ID : </label>
+              <p class="form-control-static">21054</p>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">Course name : </label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" placeholder="Course name" required=""> </div>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">Course credit: </label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" placeholder="Course credit" required=""> </div>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">Course hours : </label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" placeholder="Course hours" required=""> </div>
+            </div>
+            <div class="form-group form-row">
+              <label for="name" class="col-sm-2 col-form-label">Course intro : </label>
+              <div class="col-sm-10">
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">Required course : </label>
+              <label class="radio-inline">
+                <input type="radio" name="Rcourse" id="optionsRadios3" value="option1" checked=""> YES </label>
+              <label class="radio-inline">
+                <input type="radio" name="Rcourse" id="optionsRadios4" value="option2"> NO</label>
+            </div>
+            <div class="form-group form-row">
+              <label class="col-sm-2 col-form-label">optional course : </label>
+              <label class="radio-inline">
+                <input type="radio" name="Ocourse" id="optionsRadios3" value="option1" checked=""> YES </label>
+              <label class="radio-inline">
+                <input type="radio" name="Ocourse" id="optionsRadios4" value="option2"> NO </label>
+            </div>
+            <div class="form-group form-row">
+              <label for="name" class="col-sm-2 col-form-label">Select academy : </label>
+              <div class="col-sm-10">
+                <select class="form-control">
+                  <option>数软学院</option>
+                  <option>文学院</option>
+                  <option>物理学院</option>
+                  <option>化学院</option>
+                  <option>医学院</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group form-row">
+              <label for="name" class="col-sm-2 col-form-label">Select specialty : </label>
+              <div class="col-sm-10">
+                <select class="form-control">
+                  <option>软件工程</option>
+                  <option>计算机科学与技术</option>
+                  <option>软件外包</option>
+                  <option>大数据应用</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group form-row custom-file">
+              <label for="inputfile" class="col-sm-2 col-form-label">Upload picture : </label>
+              <input type="file" class="custom-file-input" id="inputfile">
+              <label class="custom-file-label offset-sm-2" for="inputfile">选择文件</label>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3" id="showGrade">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table table-hover table-striped table-bordered">
+            <thead class="table-info">
+              <tr>
+                <th class="">Num</th>
+                <th>StudentID</th>
+                <th>Name</th>
+                <th>Major</th>
+                <th>Course</th>
+                <th>Grade</th>
+                <th>Remarks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-warning">
+                <td>1</td>
+                <td>12306</td>
+                <td>Mark</td>
+                <td>JAVA</td>
+                <td>SSH</td>
+                <td>60</td>
+                <td>make-up examination</td>
+              </tr>
+              <tr class="table-success">
+                <td>2</td>
+                <td>12315</td>
+                <td>Jacob</td>
+                <td>OS</td>
+                <td>Bootstrap</td>
+                <td>96</td>
+                <td>null</td>
+              </tr>
+              <tr class="table-danger">
+                <td>3</td>
+                <td>12321</td>
+                <td>Larry</td>
+                <td>OS</td>
+                <td>Bootstrap</td>
+                <td>43</td>
+                <td>make-up examination</td>
+              </tr>
+              <tr class="table-success">
+                <td>1</td>
+                <td>12345</td>
+                <td>Seven</td>
+                <td>OS</td>
+                <td> Bootstrap </td>
+                <td> 88</td>
+                <td> null</td>
+              </tr>
+              <tr class="table-success">
+                <td>1</td>
+                <td>12399</td>
+                <td>James</td>
+                <td>OS</td>
+                <td> Bootstrap </td>
+                <td> 76</td>
+                <td> null</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3" id="showPagination">
+    <div class="container col-md-12">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="pagination justify-content-center align-items-center align-self-center text-primary w-100 pagination-lg">
+            <li class="page-item">
+              <a class="page-link" href="#">
+                <span>«</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">
+                <span>»</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row" id="showLoginForm">
+        <div class="col-md-3"> </div>
+        <div class="col-md-6">
+          <div class="card text-white p-5 bg-primary">
+            <div class="card-body">
+              <h1 class="mb-4">Login form</h1>
+              <form action="https://formspree.io/YOUREMAILHERE">
+                <div class="form-group">
+                  <label>Email address</label>
+                  <input type="email" class="form-control" placeholder="Enter email"> </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" class="form-control" placeholder="Password"> </div>
+                <button type="submit" class="btn btn-secondary">Login</button>
+              </form>
+              <div class="row">
+                <div class="col-md-8">
+                  <a href="#" class="text-info">forget your password?</a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="text-info">register</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 10px;right:10px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:250px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;
+    <img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16">
+  </pingendo>
+</body>
+
+</html>
